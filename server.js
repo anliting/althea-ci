@@ -23,11 +23,10 @@ function get(env){
 function calcContent(env){
     return`
 <!doctype html>
+<meta name=viewport content='width=device-width,initial-scale=1'>
 <title>Client Information</title>
-<script src=${
-    env.environmentvariables.moduleUrl
-} data-main=plugins/althea-ci/main.js async></script>
-    `
+<script src=plugins/althea-ci/main.js async></script>
+`
 }
 function minifyHtml(s){
     return s.split('\n').map(s=>s.trim()).join('')
