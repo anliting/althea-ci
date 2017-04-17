@@ -1,4 +1,4 @@
-module.exports=althea=>{
+module.exports=function(althea){
     althea.addPagemodule('/ci',pagemodule)
 }
 function pagemodule(env){
