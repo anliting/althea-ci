@@ -25,7 +25,7 @@ function calcContent(env){
 <!doctype html>
 <meta name=viewport content='width=device-width,initial-scale=1'>
 <title>Client Information</title>
-<script src=plugins/althea-ci/main.js async></script>
+<script src=plugins/ci/main.js async></script>
 `
 }
 function minifyHtml(s){
