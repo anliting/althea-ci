@@ -1,6 +1,3 @@
-module.exports=function(althea){
-    althea.addPagemodule('/ci',pagemodule)
-}
 function pagemodule(env){
     if(!env.althea.allowOrigin(env.envVars,env.request.headers.origin))
         return 403
@@ -30,4 +27,7 @@ function calcContent(env){
 }
 function minifyHtml(s){
     return s.split('\n').map(s=>s.trim()).join('')
+}
+export default althea=>{
+    althea.addPagemodule('/ci',pagemodule)
 }
