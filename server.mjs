@@ -28,6 +28,11 @@ function calcContent(env){
 function minifyHtml(s){
     return s.split('\n').map(s=>s.trim()).join('')
 }
-export default althea=>{
+function Plugin(althea){
     althea.addPagemodule('/ci',pagemodule)
 }
+Plugin.prototype.end=function(){
+}
+Plugin.prototype.shutdownEnd=function(){
+}
+export default Plugin
