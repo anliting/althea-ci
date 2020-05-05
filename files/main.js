@@ -33,19 +33,14 @@ if(window.performance){
     pre.textContent+=`\
 Performance:
 `
-        start1e4=0,end1e4=0,
-        start1e6=0,end1e6=0,
-        start1e8=0,end1e8=0
-    for(var j=0,jEnd=9;j<jEnd;j++){
-        let start=0,end=0
+    let start=0,end=0
+    for(var j=0;end-start<1e2;j++){
         start=performance.now()
         for(var i=0;i<Math.pow(10,j);i++);
         end=performance.now()
     pre.textContent+=`\
     for(var i=0;i<1e${j};i++);: ${end-start}ms
 `
-        if(2<=end-start)
-            jEnd=Math.min(jEnd,j+4)
     }
 }
 if(navigator.plugins){
