@@ -11,7 +11,8 @@ Raw value:
     screen.colorDepth: ${screen.colorDepth}
     screen.height: ${screen.height}
     screen.left: ${screen.left}
-    screen.orientation: ${screen.orientation}
+    screen.orientation.angle: ${screen.orientation.angle}
+    screen.orientation.type: ${screen.orientation.type}
     screen.pixelDepth: ${screen.pixelDepth}
     screen.top: ${screen.top}
     screen.width: ${screen.width}
