@@ -40,7 +40,7 @@ Performance:
         for(var i=0;i<Math.pow(10,j);i++);
         end=performance.now()
     pre.textContent+=`\
-    for(var i=0;i<1e${j};i++);: ${end-start}ms
+    for(var i=0;i<1e${j};i++);: ${Math.round((end-start)*1e3)/1e3}ms
 `
     }
 }
